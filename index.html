@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Virat Kohli — The King, The Chasemaster, The Run Machine. Interactive career tribute, statistics dashboard, iconic milestone timeline, and visual gallery.">
+  <title>VIRAT KOHLI // KING KOHLI — The Definitive Career Showcase</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-dark">
+  <!-- Interactive Canvas Particle / Stadium Lights Background -->
+  <canvas id="stadium-canvas"></canvas>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <div class="announcement-content">
+      <span class="pulse-dot"></span>
+      <span class="announcement-text"><strong>86 INTERNATIONAL CENTURIES</strong> &bull; ICC CRICKETER OF THE DECADE &bull; T20 WORLD CUP 2024 CHAMPION &bull; IPL CHAMPION</span>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="header-inner">
+      <a href="#hero" class="brand-logo" id="nav-brand">
+        <span class="logo-badge">18</span>
+        <div class="logo-text">
+          <span class="logo-title">VIRAT KOHLI</span>
+          <span class="logo-subtitle">THE CHASEMASTER</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="main-nav">
+        <a href="#legacy" class="nav-item">Legacy</a>
+        <a href="#gallery" class="nav-item">Iconic Moments</a>
+        <a href="#stats" class="nav-item">Career Stats</a>
+        <a href="#timeline" class="nav-item">Epic Timeline</a>
+        <a href="#vault" class="nav-item">Century Vault</a>
+        <a href="#craft" class="nav-item">The Craft</a>
+        <a href="#empire" class="nav-item">Empire & Charity</a>
+        <a href="#trivia" class="nav-item">VK18 Trivia</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="sound-btn" class="ctrl-btn" title="Toggle Sound FX" aria-label="Toggle Sound Effects">
+          <svg class="icon sound-on-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+          </svg>
+          <span class="btn-label">SFX: ON</span>
+        </button>
+        <a href="#stats" class="cta-pill" id="cta-header-stats">View Records</a>
+      </div>
+
+      <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Open Navigation Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <span class="drawer-title">MENU</span>
+      <button class="drawer-close" id="drawer-close-btn">&times;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="#legacy" class="drawer-item">Legacy & Identity</a>
+      <a href="#gallery" class="drawer-item">Iconic Moments Gallery</a>
+      <a href="#stats" class="drawer-item">Career Statistics</a>
+      <a href="#timeline" class="drawer-item">Milestone Timeline</a>
+      <a href="#vault" class="drawer-item">Century Vault</a>
+      <a href="#craft" class="drawer-item">Signature Craft</a>
+      <a href="#empire" class="drawer-item">Empire & Philanthropy</a>
+      <a href="#trivia" class="drawer-item">Kohli Trivia Challenge</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+      
+      <div class="container hero-container">
+        <div class="hero-badge-row">
+          <span class="badge-flag">
+            <span class="flag-stripe orange"></span>
+            <span class="flag-stripe white"></span>
+            <span class="flag-stripe green"></span>
+            INDIA #18
+          </span>
+          <span class="badge-pill">SIR GARFIELD SOBERS TROPHY WINNER</span>
+          <span class="badge-pill highlight">WISDEN CRICKETER OF THE DECADE</span>
+        </div>
+
+        <div class="hero-grid">
+          <div class="hero-content">
+            <h2 class="hero-eyebrow">LEGEND OF MODERN CRICKET</h2>
+            <h1 class="hero-title">
+              <span class="title-line">VIRAT</span>
+              <span class="title-line gold-text">KOHLI</span>
+            </h1>
+            <p class="hero-tagline">
+              Aggression redefined. Passion personified. The relentless run-machine who conquered every format, mastered the pressure of every run chase, and led Indian cricket with fearless swagger.
+            </p>
+
+            <div class="hero-stats-strip">
+              <div class="strip-item">
+                <span class="strip-number" data-target="86">86</span>
+                <span class="strip-label">International Tons</span>
+              </div>
+              <div class="strip-divider"></div>
+              <div class="strip-item">
+                <span class="strip-number" data-target="27000" data-suffix="+">27,000+</span>
+                <span class="strip-label">International Runs</span>
+              </div>
+              <div class="strip-divider"></div>
+              <div class="strip-item">
+                <span class="strip-number" data-target="50" data-suffix="+">50+</span>
+                <span class="strip-label">ODI Centuries (World #1)</span>
+              </div>
+              <div class="strip-divider"></div>
+              <div class="strip-item">
+                <span class="strip-number" data-target="10">10</span>
+                <span class="strip-label">ICC Awards Won</span>
+              </div>
+            </div>
+
+            <div class="hero-actions">
+              <a href="#gallery" class="btn btn-primary" id="btn-hero-moments">
+                <span>Explore Iconic Moments</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="#stats" class="btn btn-outline" id="btn-hero-stats">
+                <span>Career Deep-Dive</span>
+              </a>
+              <button class="btn btn-sound-preview" id="btn-cheer-sound" title="Hear Stadium Roar">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+                <span>Stadium Roar</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Hero Spotlight Visual -->
+          <div class="hero-visual-card">
+            <div class="visual-frame">
+              <div class="jersey-stencil">18</div>
+              <img src="images/kohli-mcg-miracle.jpg" alt="Virat Kohli celebrating the iconic MCG victory vs Pakistan" class="hero-img" id="hero-feature-img">
+              <div class="visual-overlay"></div>
+              <div class="visual-caption">
+                <span class="caption-tag">MELBOURNE 2022</span>
+                <h3>The MCG Miracle: 82* (53) vs Pakistan</h3>
+                <p>An impossible chase etched in cricket folklore forever.</p>
+              </div>
+            </div>
+            <div class="hero-trophies-float">
+              <div class="trophy-badge" title="2011 ICC Cricket World Cup">
+                <span class="trophy-icon">🏆</span>
+                <span>CWC 2011</span>
+              </div>
+              <div class="trophy-badge" title="2013 ICC Champions Trophy">
+                <span class="trophy-icon">🏆</span>
+                <span>CT 2013</span>
+              </div>
+              <div class="trophy-badge gold" title="2024 ICC Men's T20 World Cup">
+                <span class="trophy-icon">🏆</span>
+                <span>T20 WC 2024</span>
+              </div>
+              <div class="trophy-badge" title="2025 ICC Champions Trophy">
+                <span class="trophy-icon">🏆</span>
+                <span>CT 2025</span>
+              </div>
+              <div class="trophy-badge rcb" title="IPL Champion 2025 & 2026">
+                <span class="trophy-icon">🏆</span>
+                <span>IPL CHAMPION</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: THE DEFINING LEGACY / QUOTE CALLOUT -->
+    <section class="legacy-bar-section" id="legacy">
+      <div class="container">
+        <div class="legacy-card">
+          <div class="quote-symbol">&ldquo;</div>
+          <div class="legacy-content">
+            <blockquote class="lead-quote">
+              "Whatever can be said about Virat Kohli is not enough. He is the ultimate role model for athletes worldwide. His fitness, his discipline, and his sheer hunger to win under pressure make him one of a kind."
+            </blockquote>
+            <div class="quote-author-row">
+              <div class="author-info">
+                <span class="author-name">Sir Garfield Sobers &amp; Sachin Tendulkar</span>
+                <span class="author-title">Cricket Legends on Virat's Impact</span>
+              </div>
+              <div class="quote-pillars">
+                <div class="pillar-pill"><strong>65.5</strong> ODI Chase Avg</div>
+                <div class="pillar-pill"><strong>28</strong> 100s in Successful Chases</div>
+                <div class="pillar-pill"><strong>973</strong> Runs in Single IPL Season</div>
+                <div class="pillar-pill"><strong>40</strong> Test Wins as Captain</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: ICONIC MOMENTS GALLERY (FEATURING USER'S IMAGES) -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">VISUAL ARCHIVE</span>
+          <h2 class="section-title">Iconic Historic Moments</h2>
+          <p class="section-desc">Click any photograph to inspect the high-resolution moment, context, match scenario, and legendary story behind it.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Item 1: MCG Miracle -->
+          <div class="gallery-item featured" data-img="images/kohli-mcg-miracle.jpg" data-title="The MCG Miracle — 82* vs Pakistan (2022 T20 World Cup)" data-tag="T20 WORLD CUP 2022 • MELBOURNE" data-desc="Down at 31/4 chasing 160 before 90,000 stunned fans at the Melbourne Cricket Ground, Virat played arguably the greatest T20 innings ever played. The back-foot straight six off Haris Rauf remains cricket's most transcendent shot. Bat raised in deep reverence with the Indian tricolor waving behind.">
+            <div class="gallery-card">
+              <div class="card-media">
+                <img src="images/kohli-mcg-miracle.jpg" alt="Virat Kohli iconic MCG celebration with bat raised horizontally" loading="lazy">
+                <div class="card-badge">THE MASTERPIECE</div>
+              </div>
+              <div class="card-info">
+                <span class="info-date">23 October 2022 &bull; Melbourne</span>
+                <h3 class="info-title">The MCG Miracle (82* off 53 balls)</h3>
+                <p class="info-snippet">Steered India from 31/4 to an unforgettable final-ball victory against arch-rivals Pakistan.</p>
+                <button class="expand-btn">Inspect Moment &rarr;</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: The Century Roar -->
+          <div class="gallery-item" data-img="images/kohli-century-roar.jpg" data-title="The Roar of Century No. 50 — Wankhede Summit" data-tag="ICC CWC 2023 • WANKHEDE STADIUM" data-desc="In the World Cup 2023 Semi-Final against New Zealand at Wankhede Stadium, Virat Kohli breached cricket's most celebrated threshold: scoring his 50th One Day International century, surpassing his idol Sachin Tendulkar before his very eyes. Bat to the sky, helmet off, screaming in pure ecstasy.">
+            <div class="gallery-card">
+              <div class="card-media">
+                <img src="images/kohli-century-roar.jpg" alt="Virat Kohli screaming in celebration with helmet in hand and bat pointed up" loading="lazy">
+                <div class="card-badge">RECORD BREAKER</div>
+              </div>
+              <div class="card-info">
+                <span class="info-date">15 November 2023 &bull; Mumbai</span>
+                <h3 class="info-title">Surpassing The God (50th ODI Ton)</h3>
+                <p class="info-snippet">Became the first human in history to record 50 ODI centuries, bowing to Sachin Tendulkar in the stands.</p>
+                <button class="expand-btn">Inspect Moment &rarr;</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Jersey 18 Saluting the Millions -->
+          <div class="gallery-item" data-img="images/kohli-jersey-18-crowd.jpg" data-title="Jersey #18 Saluting the Blue Sea" data-tag="THE INSPIRATION • WORLD STAGE" data-desc="From Uttam Nagar, Delhi to the pinnacle of world sport. Number 18 on his back, facing an ocean of chanting Indian supporters waving tricolours. Kohli's emotional connection with cricket fans transcends boundaries.">
+            <div class="gallery-card">
+              <div class="card-media">
+                <img src="images/kohli-jersey-18-crowd.jpg" alt="Virat Kohli #18 seen from behind raising bat to roaring Indian crowd" loading="lazy">
+                <div class="card-badge">THE KING & CROWD</div>
+              </div>
+              <div class="card-info">
+                <span class="info-date">World Cup Splendor</span>
+                <h3 class="info-title">Jersey #18 &amp; A Billion Dreams</h3>
+                <p class="info-snippet">The iconic view from behind: raising the willow to salute a stadium draped in the tricolour.</p>
+                <button class="expand-btn">Inspect Moment &rarr;</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: RCB & IPL Glory -->
+          <div class="gallery-item" data-img="images/kohli-rcb-glory.jpg" data-title="Loyalty Rewarded: Royal Challengers Bengaluru" data-tag="IPL ICON • ALL-TIME LEADING RUN SCORER" data-desc="The sole player in IPL history to represent a single franchise from day one in 2008 through every single season. Leading run-scorer in IPL history, 8 centuries, 2 Orange Caps, and leading RCB through heartbreaks to back-to-back historic IPL Championship titles in 2025 and 2026!">
+            <div class="gallery-card">
+              <div class="card-media">
+                <img src="images/kohli-rcb-glory.jpg" alt="Virat Kohli celebrating in RCB jersey with gold pads" loading="lazy">
+                <div class="card-badge">RCB ROYALTY</div>
+              </div>
+              <div class="card-info">
+                <span class="info-date">IPL Legends &bull; Bengaluru</span>
+                <h3 class="info-title">8 IPL Tons &amp; Unrivalled Loyalty</h3>
+                <p class="info-snippet">Celebrations in the bold red and black with golden pads after another clutch batting masterclass.</p>
+                <button class="expand-btn">Inspect Moment &rarr;</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: Barbados 2024 Triumph & Tears -->
+          <div class="gallery-item wide" data-img="images/rohit-t20-wc-tears.jpg" data-title="Barbados 2024: Tears of Triumph — The Ro-Ko Destiny" data-tag="T20 WORLD CUP CHAMPIONS • 29 JUNE 2024" data-desc="In the high-stakes final of the 2024 T20 World Cup in Barbados, Virat stood tall when India were 34/3, compiling a clutch 76 off 59 balls to earn Player of the Match in the Final. As the final ball was bowled and India were crowned World Champions, tears flowed freely: Rohit Sharma collapsing onto the pitch weeping tears of joy, and Virat embracing him in an indelible hug before both announced retirement from T20Is at the ultimate summit.">
+            <div class="gallery-card horizontal">
+              <div class="card-media">
+                <img src="images/rohit-t20-wc-tears.jpg" alt="Rohit Sharma emotional in tears with cap 31 after 2024 T20 World Cup win" loading="lazy">
+                <div class="card-badge gold">WORLD CHAMPIONS 2024</div>
+              </div>
+              <div class="card-info">
+                <span class="info-date">29 June 2024 &bull; Kensington Oval, Barbados</span>
+                <h3 class="info-title">The Brotherhood &amp; The Cup: 76 in the Final</h3>
+                <p class="info-snippet">Kohli’s Player of the Match 76 anchored India's 176/7. The crowning glory that washed away 11 years of ICC heartbreak, captured in the raw tears of captain Rohit Sharma and the celebratory embrace of the two titans.</p>
+                <button class="expand-btn">Inspect Moment &rarr;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CAREER STATISTICS DASHBOARD -->
+    <section class="stats-section" id="stats">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">NUMBERS THAT DEFY GRAVITY</span>
+          <h2 class="section-title">The Statistical Empire</h2>
+          <p class="section-desc">Compare records across Test cricket, One Day Internationals, T20 Internationals, and the Indian Premier League.</p>
+        </div>
+
+        <!-- Format Filter Tabs -->
+        <div class="stats-tabs-bar" role="tablist">
+          <button class="tab-btn active" data-tab="all" role="tab" id="tab-all">All Formats</button>
+          <button class="tab-btn" data-tab="odi" role="tab" id="tab-odi">ODI Masterclass</button>
+          <button class="tab-btn" data-tab="test" role="tab" id="tab-test">Test Cricket</button>
+          <button class="tab-btn" data-tab="t20i" role="tab" id="tab-t20i">T20 Internationals</button>
+          <button class="tab-btn" data-tab="ipl" role="tab" id="tab-ipl">IPL &amp; RCB</button>
+        </div>
+
+        <!-- Dynamic Stat Grid Container -->
+        <div class="stat-cards-grid" id="stat-grid">
+          <!-- Populated dynamically via JS -->
+        </div>
+
+        <!-- Special Records Callout Grid -->
+        <div class="records-highlight-grid">
+          <div class="record-box">
+            <div class="record-icon">⚡</div>
+            <h4>Fastest to 8k, 9k, 10k, 11k, 12k, 13k, 14k ODI Runs</h4>
+            <p>Broke every velocity record in 50-over cricket, reaching 10,000 ODI runs in just 205 innings (surpassing Tendulkar's 259).</p>
+          </div>
+          <div class="record-box">
+            <div class="record-icon">🎯</div>
+            <h4>65.50 Average Chasing in ODIs</h4>
+            <p>28 hundreds in successful run-chases — the greatest match-finisher the sport has ever witnessed.</p>
+          </div>
+          <div class="record-box">
+            <div class="record-icon">👑</div>
+            <h4>7 Double Centuries in Tests</h4>
+            <p>The most double centuries by an Indian Test batsman, including double tons in 4 consecutive Test series (World Record).</p>
+          </div>
+          <div class="record-box">
+            <div class="record-icon">🔥</div>
+            <h4>973 Runs in a Single IPL Edition (2016)</h4>
+            <p>An astronomical 81.08 average with 4 hundreds in one IPL season — a record that still stands untouched.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: MILESTONE TIMELINE -->
+    <section class="timeline-section" id="timeline">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">CHRONICLES OF A WARRIOR</span>
+          <h2 class="section-title">The Path to Immortality</h2>
+          <p class="section-desc">Key defining chapters in the life and career of Virat Kohli.</p>
+        </div>
+
+        <!-- Filter Epoch Buttons -->
+        <div class="timeline-filters">
+          <button class="filter-btn active" data-filter="all">All Eras</button>
+          <button class="filter-btn" data-filter="early">1998–2008: Rise</button>
+          <button class="filter-btn" data-filter="conquest">2009–2015: Establishment</button>
+          <button class="filter-btn" data-filter="peak">2016–2019: The Pinnacle</button>
+          <button class="filter-btn" data-filter="redemption">2020–2026: Resurrection & Glory</button>
+        </div>
+
+        <div class="timeline-tree" id="timeline-tree">
+          <!-- 1998–2006: West Delhi & Father's Passing -->
+          <div class="timeline-node" data-era="early">
+            <div class="node-marker">1998–2006</div>
+            <div class="node-card">
+              <span class="node-tag">THE CRUCIBLE</span>
+              <h3>The Day Everything Changed: 90 to Save Delhi</h3>
+              <p>Trained by coach Rajkumar Sharma at West Delhi Cricket Academy. On 18 December 2006, while Kohli was batting on 40* overnight in a Ranji Trophy fixture against Karnataka, his father Prem Nath Kohli tragically passed away. Despite heartbreak, teenage Virat returned to the crease, battled through tears to score 90 crucial runs to save Delhi from follow-on, and only then attended his father's cremation. His mother recalled: <em>"His demeanor shifted noticeably after that day. Cricket became his sole devotion."</em></p>
+            </div>
+          </div>
+
+          <!-- 2008: U-19 World Cup & RCB Debut -->
+          <div class="timeline-node" data-era="early">
+            <div class="node-marker">2008</div>
+            <div class="node-card">
+              <span class="node-tag">UNDER-19 WORLD CUP</span>
+              <h3>Lifting the Cup in Malaysia &amp; The $50,000 RCB Pick</h3>
+              <p>Captained India Under-19 to victory in Malaysia, compiling 235 runs including a sublime 74-ball century against the West Indies. Drafted into Royal Challengers Bangalore for $50,000, initiating an unbreakable 18+ season bond. Received a surprise senior India call-up in Colombo in August 2008.</p>
+            </div>
+          </div>
+
+          <!-- 2011: World Cup Glory at 22 -->
+          <div class="timeline-node" data-era="conquest">
+            <div class="node-marker">2011</div>
+            <div class="node-card">
+              <span class="node-tag">WORLD CHAMPION</span>
+              <h3>Debut Century &amp; Lifting Tendulkar on His Shoulders</h3>
+              <p>Scored a century on World Cup debut against Bangladesh. In the final at Wankhede, his resolute 35 alongside Gautam Gambhir steadied the ship after early wickets. Carried Tendulkar around the ground, uttering the immortal words: <em>"Sachin Tendulkar has carried the burden of the nation for 21 years; it is time we carried him on our shoulders."</em></p>
+            </div>
+          </div>
+
+          <!-- 2012: The Hobart Massacre (133* off 86) -->
+          <div class="timeline-node" data-era="conquest">
+            <div class="node-marker">2012</div>
+            <div class="node-card">
+              <span class="node-tag">CHASEMASTER ARRIVES</span>
+              <h3>Hobart Demolition &amp; Career-Best 183 vs Pakistan</h3>
+              <p>Chasing 321 inside 40 overs to stay alive in the CB Series, Kohli dismantled Lasith Malinga and Sri Lanka, hitting 133* in 86 balls as India cruised in just 36.4 overs. Followed it with an explosive 183 off 148 balls against Pakistan in Mirpur — confirming his stature as the world's most terrifying chaser.</p>
+            </div>
+          </div>
+
+          <!-- 2014-2016: Captaincy & The 973-run IPL Wonder -->
+          <div class="timeline-node" data-era="peak">
+            <div class="node-marker">2014–2016</div>
+            <div class="node-card">
+              <span class="node-tag">THE PEAK ERA</span>
+              <h3>Adelaide Twin Centuries &amp; 973 Runs in IPL 2016</h3>
+              <p>Took over Test captaincy in Australia with centuries in both innings at Adelaide (115 & 141), signaling a fearless, aggressive new mindset. In 2016, achieved peak god-mode: 973 runs in 16 IPL matches with 4 centuries and 81.08 average, and named Player of the Tournament at the ICC World T20 for the second consecutive edition.</p>
+            </div>
+          </div>
+
+          <!-- 2017-2018: Absolute World Domination -->
+          <div class="timeline-node" data-era="peak">
+            <div class="node-marker">2017–2018</div>
+            <div class="node-card">
+              <span class="node-tag">ICC CLEAN SWEEP</span>
+              <h3>Cricketer of the Year &amp; Historic Australian Conquest</h3>
+              <p>In 2018, became the first player in history to win all three primary ICC awards simultaneously: Sir Garfield Sobers Trophy (Cricketer of the Year), Test Player of the Year, and ODI Player of the Year. Led India to their first-ever Test series victory in Australia (2018–19). Voted ICC Cricketer of the Decade (2011–2020).</p>
+            </div>
+          </div>
+
+          <!-- 2022: The MCG Miracle (82* vs PAK) -->
+          <div class="timeline-node" data-era="redemption">
+            <div class="node-marker">2022</div>
+            <div class="node-card">
+              <span class="node-tag">THE RESURRECTION</span>
+              <h3>End of the 1000-Day Drought &amp; Melbourne Magic</h3>
+              <p>After an agonizing 1,020-day century drought and stepping down from captaincy, Kohli roared back with his maiden T20I hundred (122* vs Afghanistan). Weeks later at the MCG, with India 31/4 chasing 160 vs Pakistan, he engineered the greatest chase of all time with 82* (53), smashing Haris Rauf for two breathtaking sixes.</p>
+            </div>
+          </div>
+
+          <!-- 2023: 50th Century & Record 765 WC Runs -->
+          <div class="timeline-node" data-era="redemption">
+            <div class="node-marker">2023</div>
+            <div class="node-card">
+              <span class="node-tag">WORLD CUP SUMMIT</span>
+              <h3>Surpassing Tendulkar: 50 ODI Tons &amp; Player of the Tournament</h3>
+              <p>Amassed 765 runs in the 2023 Cricket World Cup — the most in any single tournament in cricket history. In the semi-final at Mumbai, notched his 50th ODI century, surpassing Sachin Tendulkar's legendary benchmark of 49.</p>
+            </div>
+          </div>
+
+          <!-- 2024-2026: T20 World Cup Triumph, IPL Titles & 86 Tons -->
+          <div class="timeline-node" data-era="redemption">
+            <div class="node-marker">2024–2026</div>
+            <div class="node-card">
+              <span class="node-tag">THE ETERNAL KING</span>
+              <h3>World Champions in Barbados, Champions Trophy &amp; 86 Centuries</h3>
+              <p>Anchored India's 2024 T20 World Cup final victory with a heroic 76 off 59, winning Player of the Match and lifting the ICC trophy before retiring from T20Is on top. Followed with Champions Trophy 2025 triumph (fastest to 14,000 ODI runs), back-to-back IPL titles for Bengaluru (2025 & 2026), and crossing 86 international tons with his 54th ODI century!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: THE CENTURY VAULT (FILTERABLE & SEARCHABLE) -->
+    <section class="vault-section" id="vault">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">THE 86 RECORD COMPILATION</span>
+          <h2 class="section-title">The Century Vault</h2>
+          <p class="section-desc">Search and filter through the landmark hundreds that redefined cricket history.</p>
+        </div>
+
+        <div class="vault-controls">
+          <div class="search-box">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="century-search" placeholder="Search opponent, venue, format, or year (e.g., Pakistan, Hobart, Wankhede)...">
+          </div>
+          <div class="filter-group">
+            <button class="vault-filter-btn active" data-vfilter="all">All Formats</button>
+            <button class="vault-filter-btn" data-vfilter="ODI">ODIs (55)</button>
+            <button class="vault-filter-btn" data-vfilter="Test">Tests (30)</button>
+            <button class="vault-filter-btn" data-vfilter="T20I">T20I (1)</button>
+            <button class="vault-filter-btn" data-vfilter="chase">Run Chases</button>
+          </div>
+        </div>
+
+        <div class="vault-table-wrapper">
+          <table class="vault-table" id="vault-table">
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Score</th>
+                <th>Format</th>
+                <th>Opponent</th>
+                <th>Innings / Context</th>
+                <th>Venue &amp; Year</th>
+                <th>Result</th>
+              </tr>
+            </thead>
+            <tbody id="vault-tbody">
+              <!-- Populated by JavaScript -->
+            </tbody>
+          </table>
+        </div>
+        <div class="vault-counter-footer">
+          <span id="vault-showing-text">Showing notable landmark centuries</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: THE CRAFT & SIGNATURE STYLE -->
+    <section class="craft-section" id="craft">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">ANATOMY OF GENIUS</span>
+          <h2 class="section-title">Technique, Fitness &amp; Mentality</h2>
+          <p class="section-desc">The physical, tactical, and psychological pillars that forged the world's most disciplined cricketer.</p>
+        </div>
+
+        <div class="craft-grid">
+          <!-- Pillar 1: Cover Drive -->
+          <div class="craft-card">
+            <div class="craft-header">
+              <span class="craft-pill">SIGNATURE STROKE</span>
+              <span class="craft-icon">🏏</span>
+            </div>
+            <h3>The Regal Cover Drive</h3>
+            <p>Weight transferred seamlessly onto the front foot, high elbow pointing directly toward mid-off, head over the ball, bat face opening at the split second of impact. Described by Ian Chappell and Michael Atherton as cricket's purest aesthetic manifestation of balance and timing.</p>
+            <ul class="craft-specs">
+              <li><strong>Stance:</strong> Slightly open-chested, balanced base</li>
+              <li><strong>Grip:</strong> Dominant bottom-hand control for supreme acceleration</li>
+              <li><strong>Scoring Arc:</strong> Between deep cover and mid-off along the turf</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 2: The Wrist Flick -->
+          <div class="craft-card">
+            <div class="craft-header">
+              <span class="craft-pill">WHIP ACCELERATION</span>
+              <span class="craft-icon">⚡</span>
+            </div>
+            <h3>The Supple Wrist Flick</h3>
+            <p>Picking deliveries off middle-and-leg with surgical wrist rotation, piercing the gap between mid-wicket and square leg. His ability to hit balls bowled outside off-stump through mid-wicket disrupts field placings and demoralizes world-class bowlers.</p>
+            <ul class="craft-specs">
+              <li><strong>Impact:</strong> Lightning-fast bat speed at point of contact</li>
+              <li><strong>Placement:</strong> Manipulating angles to beat deep boundary riders</li>
+              <li><strong>Risk:</strong> Virtually zero airborne risk — ground-hugging trajectory</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 3: Fitness Revolution -->
+          <div class="craft-card">
+            <div class="craft-header">
+              <span class="craft-pill">FITNESS REVOLUTION</span>
+              <span class="craft-icon">🏋️</span>
+            </div>
+            <h3>The Yo-Yo Pioneer &amp; Diet</h3>
+            <p>Single-handedly transformed Indian cricket into a world-class athletic unit. In 2018, transitioned to a vegetarian diet to cure elevated uric acid affecting his finger mobility. Renowned for converting ones into twos in the 48th over as briskly as the 1st over.</p>
+            <ul class="craft-specs">
+              <li><strong>Diet:</strong> High-protein vegetarian &amp; clean nutrition</li>
+              <li><strong>Yo-Yo Test Score:</strong> 19.3+ benchmark standard</li>
+              <li><strong>Speed:</strong> Over 55% of all his ODI runs scored via running between wickets</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 4: Aggressive Psychology -->
+          <div class="craft-card">
+            <div class="craft-header">
+              <span class="craft-pill">WARRIOR MINDSET</span>
+              <span class="craft-icon">🔥</span>
+            </div>
+            <h3>Unapologetic Competitive Fire</h3>
+            <p>Redefined the demeanour of Indian cricket. Replaced polite passivity with aggressive intent, stare-downs, and proactive captaincy. In his own words: <em>"My aggression is my fuel. It sharpens my focus when the stakes are highest."</em></p>
+            <ul class="craft-specs">
+              <li><strong>Chasing Mentality:</strong> Treats every chase as an equation to be systematically solved</li>
+              <li><strong>Captaincy Tenor:</strong> 5-bowler aggressive strategy; conquered Australia, England &amp; South Africa</li>
+              <li><strong>Clutch Index:</strong> Top scorer in ICC knockouts across formats</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: COMMERCIAL EMPIRE & PHILANTHROPY -->
+    <section class="empire-section" id="empire">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">OFF THE PITCH</span>
+          <h2 class="section-title">The Business Empire &amp; Philanthropy</h2>
+          <p class="section-desc">From establishing youth athletics to leading global lifestyle brands and animal welfare initiatives.</p>
+        </div>
+
+        <div class="empire-layout">
+          <!-- Business Ventures -->
+          <div class="empire-block">
+            <div class="block-badge business">BUSINESS &amp; INVESTMENTS</div>
+            <h3 class="block-title">Brand VK18 — Valuation &gt; $100M+</h3>
+            <div class="ventures-list">
+              <div class="venture-item">
+                <div class="venture-icon">👟</div>
+                <div>
+                  <strong>One8 &amp; Agilitas</strong>
+                  <p>Athletic lifestyle brand launched in partnership with Puma, transitioned to strategic investor with sports brand Agilitas in 2025.</p>
+                </div>
+              </div>
+              <div class="venture-item">
+                <div class="venture-icon">👔</div>
+                <div>
+                  <strong>WROGN</strong>
+                  <p>Co-created men's casual wear fashion brand with Universal Sportsbiz (USPL), one of India's top youth apparel labels.</p>
+                </div>
+              </div>
+              <div class="venture-item">
+                <div class="venture-icon">🍽️</div>
+                <div>
+                  <strong>One8 Commune &amp; Nueva</strong>
+                  <p>Fine-dining restaurant chains across Delhi, Mumbai (at Kishore Kumar's iconic bungalow 'Gouri Kunj'), Pune, and Kolkata.</p>
+                </div>
+              </div>
+              <div class="venture-item">
+                <div class="venture-icon">⚽</div>
+                <div>
+                  <strong>FC Goa &amp; Sports Franchises</strong>
+                  <p>Co-owner of Indian Super League club FC Goa, UAE Royals (IPTL tennis), and Bengaluru Yodhas (wrestling).</p>
+                </div>
+              </div>
+              <div class="venture-item">
+                <div class="venture-icon">💡</div>
+                <div>
+                  <strong>Tech &amp; Startup Angel</strong>
+                  <p>Strategic investor in Digit Insurance, MPL (Mobile Premier League), Hyperice, Rage Coffee, and Blue Tribe plant-based meats.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Philanthropy -->
+          <div class="empire-block">
+            <div class="block-badge charity">GIVING BACK</div>
+            <h3 class="block-title">Virat Kohli Foundation (VKF)</h3>
+            <div class="ventures-list">
+              <div class="venture-item">
+                <div class="venture-icon">🎓</div>
+                <div>
+                  <strong>Underprivileged Children &amp; Education</strong>
+                  <p>Established in 2013; partners with Smile Foundation and Save the Children to fund healthcare, schooling, and nutrition for young kids.</p>
+                </div>
+              </div>
+              <div class="venture-item">
+                <div class="venture-icon">🏃‍♂️</div>
+                <div>
+                  <strong>Athlete Development Programme (ADP)</strong>
+                  <p>Funds and mentors promising young Indian athletes across golf, tennis, and swimming with coaching, nutrition, and world-class equipment.</p>
+                </div>
+              </div>
+              <div class="venture-item">
+                <div class="venture-icon">🐕</div>
+                <div>
+                  <strong>Animal Welfare &amp; Trauma Centre</strong>
+                  <p>Partnered with Awaaz Foundation in Mumbai to launch two state-of-the-art animal rehabilitation and emergency trauma centres for strays.</p>
+                </div>
+              </div>
+              <div class="venture-item">
+                <div class="venture-icon">🤝</div>
+                <div>
+                  <strong>COVID-19 #InThisTogether Relief</strong>
+                  <p>Personal contribution of ₹2+ crore, leading a nationwide campaign with Anushka Sharma that raised over ₹11 crore for emergency oxygen and medical supplies.</p>
+                </div>
+              </div>
+              <div class="venture-item">
+                <div class="venture-icon">👵</div>
+                <div>
+                  <strong>ABIL Foundation &amp; Senior Care</strong>
+                  <p>Supporting old-age homes and elder healthcare initiatives across Maharashtra.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: QUOTES FROM CRICKETING ROYALTY -->
+    <section class="quotes-section" id="quotes">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">GLOBAL ACCLAIM</span>
+          <h2 class="section-title">What the World Says About The King</h2>
+        </div>
+
+        <div class="quotes-carousel-wrapper">
+          <div class="quote-card active" id="quote-card-display">
+            <p class="quote-text" id="quote-text">"I love watching Virat Kohli bat. He reminds me of myself. His aggression, his drive, and the way he attacks the bowling — he is a master."</p>
+            <div class="quote-meta">
+              <span class="quote-speaker" id="quote-speaker">Sir Vivian Richards</span>
+              <span class="quote-role" id="quote-role">West Indies Batting Colossus</span>
+            </div>
+          </div>
+
+          <div class="quotes-controls">
+            <button class="quote-nav-btn" id="prev-quote-btn" aria-label="Previous Quote">&larr;</button>
+            <div class="quote-dots" id="quote-dots">
+              <!-- Dots added by JS -->
+            </div>
+            <button class="quote-nav-btn" id="next-quote-btn" aria-label="Next Quote">&rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: INTERACTIVE VK18 TRIVIA CHALLENGE -->
+    <section class="trivia-section" id="trivia">
+      <div class="container">
+        <div class="trivia-card">
+          <div class="trivia-header">
+            <div class="trivia-badge">FAN ARENA</div>
+            <h2 class="trivia-title">The King Kohli Trivia Challenge</h2>
+            <p>Prove how well you know the milestones, quirks, and records of #18!</p>
+          </div>
+
+          <div class="trivia-body" id="trivia-body">
+            <div class="trivia-question-bar">
+              <span id="trivia-q-num">Question 1 of 5</span>
+              <span id="trivia-score">Score: 0</span>
+            </div>
+            <h3 class="trivia-question" id="trivia-question-text">Loading question...</h3>
+            <div class="trivia-options" id="trivia-options">
+              <!-- Rendered dynamically -->
+            </div>
+            <div class="trivia-feedback" id="trivia-feedback"></div>
+          </div>
+
+          <div class="trivia-footer">
+            <button class="btn btn-outline" id="btn-next-trivia" style="display: none;">Next Question &rarr;</button>
+            <button class="btn btn-primary" id="btn-restart-trivia" style="display: none;">Play Again</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LIGHTBOX MODAL FOR IMAGE INSPECTION -->
+  <div class="modal-backdrop" id="image-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-content">
+        <div class="modal-img-wrapper">
+          <img src="" alt="" id="modal-img">
+        </div>
+        <div class="modal-details">
+          <span class="modal-tag" id="modal-tag">MATCH ARCHIVE</span>
+          <h3 class="modal-title" id="modal-title">Moment Title</h3>
+          <p class="modal-desc" id="modal-desc">Moment description will appear here.</p>
+          <div class="modal-actions">
+            <button class="btn btn-primary" id="modal-sound-btn">
+              <span>Play Atmosphere</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+            </button>
+            <a href="" download class="btn btn-outline" id="modal-download-link">Download Image</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-18">18</span>
+          <div>
+            <h4>VIRAT KOHLI</h4>
+            <p>The Chasemaster. The Legend. Modern Cricket's Greatest Ambassador.</p>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <a href="#hero">Back to Top</a>
+          <a href="#gallery">Moments</a>
+          <a href="#stats">Stats</a>
+          <a href="#timeline">Timeline</a>
+          <a href="#vault">Centuries</a>
+          <a href="#empire">Business</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Curated tribute and statistical archive honoring the career of Virat Kohli. Data compiled from international cricket records.</p>
+        <p class="made-tag">Crafted with passion for cricket fans worldwide.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
