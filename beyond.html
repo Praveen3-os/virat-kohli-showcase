@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Virat Kohli — Beyond the Pitch: The Virushka story, family, fitness &amp; lifestyle transformation, business empire, philanthropy, and the VK18 trivia arena.">
+  <title>VIRAT KOHLI // Beyond Cricket, Empire &amp; Fan Arena</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-dark">
+  <!-- Interactive Canvas Particle / Stadium Lights Background -->
+  <canvas id="stadium-canvas"></canvas>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <div class="announcement-content">
+      <span class="pulse-dot"></span>
+      <span class="announcement-text"><strong>PAGE 03: BEYOND CRICKET</strong> &bull; VIRUSHKA &bull; $100M+ EMPIRE &bull; VIRAT KOHLI FOUNDATION &bull; TRIVIA ARENA</span>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar (3 Dedicated Pages) -->
+  <header class="site-header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-logo" id="nav-brand">
+        <span class="logo-badge">18</span>
+        <div class="logo-text">
+          <span class="logo-title">VIRAT KOHLI</span>
+          <span class="logo-subtitle">BEYOND CRICKET</span>
+        </div>
+      </a>
+
+      <!-- 3 Primary Pages Navigation -->
+      <nav class="nav-links" id="main-nav">
+        <a href="index.html" class="nav-item">Home &amp; Moments</a>
+        <a href="records.html" class="nav-item">Career &amp; Records</a>
+        <a href="beyond.html" class="nav-item active">Beyond Cricket &amp; Trivia</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="sound-btn" class="ctrl-btn" title="Toggle Sound FX" aria-label="Toggle Sound Effects">
+          <svg class="icon sound-on-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+          </svg>
+          <span class="btn-label">SFX: ON</span>
+        </button>
+        <a href="#trivia" class="cta-pill" id="cta-header-trivia">Play Trivia &rarr;</a>
+      </div>
+
+      <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Open Navigation Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <span class="drawer-title">PAGES</span>
+      <button class="drawer-close" id="drawer-close-btn">&times;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="index.html" class="drawer-item">1. Home &amp; Iconic Moments</a>
+      <a href="records.html" class="drawer-item">2. Career &amp; Records Archive</a>
+      <a href="beyond.html" class="drawer-item active">3. Beyond Cricket &amp; Trivia</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE 3 HERO BANNER -->
+    <section class="page-header-banner">
+      <div class="container">
+        <div class="banner-badge">OFF THE PITCH</div>
+        <h1 class="banner-title">The Man Behind The Titan</h1>
+        <p class="banner-desc">Love, fatherhood, health transformation, global brand building, and humanitarian philanthropy. Explore the life, empire, and values of Virat Kohli beyond the 22 yards.</p>
+        
+        <div class="page-quick-anchors">
+          <a href="#personal" class="anchor-pill">Personal Life &amp; Virushka</a>
+          <a href="#empire" class="anchor-pill">Commercial Empire</a>
+          <a href="#philanthropy" class="anchor-pill">Virat Kohli Foundation</a>
+          <a href="#trivia" class="anchor-pill">VK18 Trivia Challenge</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: PERSONAL LIFE & VIRUSHKA -->
+    <section class="personal-life-section" id="personal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">LIFE, LOVE &amp; ANCHORS</span>
+          <h2 class="section-title">The "Virushka" Journey &amp; Lifestyle</h2>
+          <p class="section-desc">From meeting on a shampoo commercial to one of India's most celebrated power couples and dedicated parents.</p>
+        </div>
+
+        <div class="personal-grid">
+          <!-- Card 1: Virushka Story -->
+          <div class="personal-card featured">
+            <div class="personal-icon">💍</div>
+            <div class="personal-content">
+              <span class="personal-tag">THE LOVE STORY</span>
+              <h3>From Clear Shampoo to Florence: The Virushka Fairytale</h3>
+              <p>In 2013, Virat first encountered Bollywood actress Anushka Sharma on set for a Clear shampoo commercial shoot. As Kohli candidly confessed in an interview with Graham Bensinger, he was nervous and cracked a joke about her high heels to break the ice. Their relationship blossomed away from the media spotlight, leading to their intimate, dreamlike wedding on <strong>11 December 2017 in Florence, Italy</strong>.</p>
+              <div class="family-badges">
+                <span class="fbadge">Florence Wedding (2017)</span>
+                <span class="fbadge">Daughter Vamika (Born Jan 2021)</span>
+                <span class="fbadge">Son Akaay (Born Feb 2024)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Health & Dietary Transformation -->
+          <div class="personal-card">
+            <div class="personal-icon">🥗</div>
+            <div class="personal-content">
+              <span class="personal-tag">HEALTH TRANSFORMATION</span>
+              <h3>The Vegetarian Shift for Peak Batting</h3>
+              <p>In 2018, Kohli discovered that elevated uric acid levels were triggering a cervical spine condition that radiated pain to his fingers and hindered his batting grip. He eliminated meat completely, adopting a nutrient-dense vegetarian lifestyle that cured his condition and extended his athletic longevity.</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Rituals, Superstitions & Sacred Tattoos -->
+          <div class="personal-card">
+            <div class="personal-icon">🕉️</div>
+            <div class="personal-content">
+              <span class="personal-tag">SPIRITUALITY &amp; INK</span>
+              <h3>The Sacred Kara, Shiva &amp; Cap Numbers</h3>
+              <p>Kohli has worn a religious Sikh <em>kara</em> on his right wrist since 2012, alongside his white shoes superstition and single lucky pair of batting gloves. His tattoos carry profound meaning: Lord Shiva meditating on Mount Kailash, a Japanese samurai warrior, the sacred syllable Om, his parents' names (Prem &amp; Saroj), and his India ODI (#175) and Test (#269) cap numbers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: COMMERCIAL EMPIRE & VENTURES -->
+    <section class="empire-section" id="empire">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">BRAND KOHLI</span>
+          <h2 class="section-title">The Commercial Powerhouse ($100M+ Net Worth)</h2>
+          <p class="section-desc">Ranked among Forbes' Highest-Paid Athletes and boasting over 274+ million followers on Instagram as the most-followed Asian personality.</p>
+        </div>
+
+        <div class="empire-layout">
+          <!-- Business Ventures -->
+          <div class="empire-block">
+            <div class="block-badge business">FASHION, RESTAURANTS &amp; ATHLEISURE</div>
+            <h3 class="block-title">Lifestyle &amp; Hospitality Brands</h3>
+            <div class="ventures-list">
+              <div class="venture-item">
+                <div class="venture-icon">👟</div>
+                <div>
+                  <strong>One8 &amp; Agilitas</strong>
+                  <p>Co-founded his signature brand One8. In 2025, concluded his landmark 8-year Puma deal to become an investor in sports athleisure innovator Agilitas.</p>
+                </div>
+              </div>
+              <div class="venture-item">
+                <div class="venture-icon">👔</div>
+                <div>
+                  <strong>WROGN Casuals</strong>
+                  <p>Co-created youth streetwear and casual apparel brand WROGN in partnership with Anjana Reddy's Universal Sportsbiz.</p>
+                </div>
+              </div>
+              <div class="venture-item">
+                <div class="venture-icon">🍽️</div>
+                <div>
+                  <strong>One8 Commune &amp; Nueva</strong>
+                  <p>Fine-dining restaurant chains across Delhi, Pune, Kolkata, and Mumbai (anchored in legendary singer Kishore Kumar's bungalow, Gouri Kunj).</p>
+                </div>
+              </div>
+              <div class="venture-item">
+                <div class="venture-icon">🏋️</div>
+                <div>
+                  <strong>Chisel Fitness</strong>
+                  <p>Invested ₹90 crore to establish Chisel, a nationwide chain of premium health clubs and fitness centers.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Franchise & Tech Portfolio -->
+          <div class="empire-block">
+            <div class="block-badge business">FRANCHISES &amp; VENTURE ANGEL</div>
+            <h3 class="block-title">Sports Franchises &amp; Tech Startups</h3>
+            <div class="ventures-list">
+              <div class="venture-item">
+                <div class="venture-icon">⚽</div>
+                <div>
+                  <strong>FC Goa &amp; Global Sports Leagues</strong>
+                  <p>Co-owner of Indian Super League (ISL) football club FC Goa, UAE Royals (tennis), Bengaluru Yodhas (wrestling), and World Bowling League (2025).</p>
+                </div>
+              </div>
+              <div class="venture-item">
+                <div class="venture-icon">🛡️</div>
+                <div>
+                  <strong>Digit Insurance</strong>
+                  <p>Early equity investment with Anushka Sharma in Digit Insurance, one of India's premier fintech unicorns.</p>
+                </div>
+              </div>
+              <div class="venture-item">
+                <div class="venture-icon">⚡</div>
+                <div>
+                  <strong>Hyperice, MPL &amp; Rage Coffee</strong>
+                  <p>Strategic investor and global ambassador in high-performance recovery tech Hyperice, gaming platform MPL, and Rage Coffee.</p>
+                </div>
+              </div>
+              <div class="venture-item">
+                <div class="venture-icon">🌱</div>
+                <div>
+                  <strong>Blue Tribe Foods</strong>
+                  <p>Investor and champion for Blue Tribe, promoting plant-based sustainable meats across India.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: PHILANTHROPY (VIRAT KOHLI FOUNDATION) -->
+    <section class="philanthropy-section" id="philanthropy">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">GIVING BACK</span>
+          <h2 class="section-title">The Virat Kohli Foundation</h2>
+          <p class="section-desc">Transforming the lives of underprivileged children, nurturing future Olympians, and championing stray animal welfare.</p>
+        </div>
+
+        <div class="philanthropy-grid">
+          <div class="ph-card">
+            <div class="ph-icon">🎓</div>
+            <h3>Underprivileged Youth &amp; Education</h3>
+            <p>Established in 2013, VKF partners with Smile Foundation, Save the Children, and eBay to fund education, healthcare, and meal programs for thousands of underprivileged children across India.</p>
+          </div>
+
+          <div class="ph-card">
+            <div class="ph-icon">🏆</div>
+            <h3>Athlete Development Programme (ADP)</h3>
+            <p>Identifies and funds promising young Indian athletes across non-cricketing sports—covering international coaching, nutrition, and gear. Supported athletes include champion golfer Aadil Bedi.</p>
+          </div>
+
+          <div class="ph-card">
+            <div class="ph-icon">🐕</div>
+            <h3>Animal Rehabilitation &amp; Trauma Centre</h3>
+            <p>Inspired by Anushka's love for animals, VKF collaborated with the Awaaz Foundation in Mumbai to establish two emergency care centers and a trauma facility for stray animals.</p>
+          </div>
+
+          <div class="ph-card">
+            <div class="ph-icon">🤝</div>
+            <h3>#InThisTogether COVID-19 Relief</h3>
+            <p>Donated ₹3+ crore to PM CARES and state relief funds; spearheading a national Ketto fundraiser '#InThisTogether' that generated over ₹11 crore for life-saving hospital oxygen concentrators.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: INTERACTIVE VK18 TRIVIA CHALLENGE -->
+    <section class="trivia-section" id="trivia">
+      <div class="container">
+        <div class="trivia-card">
+          <div class="trivia-header">
+            <div class="trivia-badge">FAN ARENA</div>
+            <h2 class="trivia-title">The King Kohli Trivia Challenge</h2>
+            <p>Prove how well you know the milestones, quirks, and records of #18!</p>
+          </div>
+
+          <div class="trivia-body" id="trivia-body">
+            <div class="trivia-question-bar">
+              <span id="trivia-q-num">Question 1 of 5</span>
+              <span id="trivia-score">Score: 0</span>
+            </div>
+            <h3 class="trivia-question" id="trivia-question-text">Loading question...</h3>
+            <div class="trivia-options" id="trivia-options">
+              <!-- Rendered dynamically via app.js -->
+            </div>
+            <div class="trivia-feedback" id="trivia-feedback"></div>
+          </div>
+
+          <div class="trivia-footer">
+            <button class="btn btn-outline" id="btn-next-trivia" style="display: none;">Next Question &rarr;</button>
+            <button class="btn btn-primary" id="btn-restart-trivia" style="display: none;">Play Again</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-18">18</span>
+          <div>
+            <h4>VIRAT KOHLI</h4>
+            <p>The Chasemaster. The Legend. Modern Cricket's Greatest Ambassador.</p>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <a href="index.html">Home &amp; Moments</a>
+          <a href="records.html">Career &amp; Records</a>
+          <a href="beyond.html">Beyond Cricket &amp; Trivia</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Curated tribute and statistical archive honoring the career of Virat Kohli. Data compiled from international cricket records.</p>
+        <p class="made-tag">Page 3 of 3 &bull; Crafted with passion for cricket fans worldwide.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
